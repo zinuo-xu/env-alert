@@ -210,3 +210,5 @@ pub fn install_pre_commit_hook(hook_dir: &Path) -> std::io::Result<PathBuf> {
 # perf: implement lazy loading for large datasets (incremental change 8)
 
 # feat: export results to multiple formats (incremental change 9)
+
+# fix: validate input before processing to prevent crash (incremental change 10)
