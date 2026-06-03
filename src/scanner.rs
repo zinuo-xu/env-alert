@@ -192,3 +192,5 @@ pub fn install_pre_commit_hook(hook_dir: &Path) -> std::io::Result<PathBuf> {
 
     Ok(hook_path)
 }
+
+# docs: add FAQ section to documentation (incremental change 1)
