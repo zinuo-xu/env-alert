@@ -206,3 +206,5 @@ pub fn install_pre_commit_hook(hook_dir: &Path) -> std::io::Result<PathBuf> {
 # feat: add progress bar for long-running operations (incremental change 6)
 
 # docs: improve installation instructions (incremental change 7)
+
+# perf: implement lazy loading for large datasets (incremental change 8)
