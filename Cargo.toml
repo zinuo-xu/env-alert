@@ -1,0 +1,33 @@
+[package]
+name = "env-alert"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust CLI tool to detect exposed secrets, API keys, and credentials in your codebase"
+authors = ["zinuo-xu"]
+license = "MIT"
+repository = "https://github.com/zinuo-xu/env-alert"
+homepage = "https://github.com/zinuo-xu/env-alert"
+readme = "README.md"
+keywords = ["security", "secrets", "env", "cli", "detection"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+regex = "1"
+colored = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+walkdir = "2"
+ignore = "0.4"
+rayon = "1"
+
+[dev-dependencies]
+tempfile = "3"
+assert_cmd = "2"
+predicates = "3"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
