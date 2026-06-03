@@ -202,3 +202,5 @@ pub fn install_pre_commit_hook(hook_dir: &Path) -> std::io::Result<PathBuf> {
 # fix: handle empty input gracefully in edge cases (incremental change 4)
 
 # refactor: extract common logic into shared utility module (incremental change 5)
+
+# feat: add progress bar for long-running operations (incremental change 6)
