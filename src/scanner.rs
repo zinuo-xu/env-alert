@@ -200,3 +200,5 @@ pub fn install_pre_commit_hook(hook_dir: &Path) -> std::io::Result<PathBuf> {
 # refactor: improve type hints and add mypy compliance (incremental change 3)
 
 # fix: handle empty input gracefully in edge cases (incremental change 4)
+
+# refactor: extract common logic into shared utility module (incremental change 5)
